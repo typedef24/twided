@@ -1,0 +1,310 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    min-height: 60px;
+    height: auto;
+    /*background-color: #5bc0de;*/
+    border-top: 2px solid #5bc0de;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* programmer styles */
+.logo{
+    width: 40px;
+    height: 40px;
+    margin-top: -10px;
+}
+
+/* styling the panes of the tabs on the portal */
+.tab-pane{
+    background-color: white;
+    padding: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px; 
+}
+
+/* Styling text in d nav bar */
+.shawsub{
+    color: white; 
+    font-family: URW Chancery L, verdana sarif;
+    font-size:2.5em;
+}
+
+/* Styling text in d message on portal righmost */
+.shawsub1{
+    /*color: black;*/ 
+    font-family: URW Chancery L, verdana sarif;
+    font-size:3.0em;
+}
+
+/* Styling text in d about tab on portal */
+.shawsubAbt{
+    font-family: URW Chancery L, verdana sarif;
+    font-size:2.0em;
+}
+
+/** This is to show the contain of the error page*/
+.errormessage{
+    color: red; 
+    text-shadow: 1px 1px 1px #9c27b0;
+    font-size:5.0em;
+    font-family: URW Chancery L, verdana sarif;
+    text-align:center;
+}
+
+.ontop{
+    margin-top: -60px; 
+    background-color: white; 
+    border-radius: 5px;
+    /*-webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 1), 0 1px 2px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 200px rgba(255, 255, 255, 1), 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 200px rgba(255, 255, 255, 1), 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 12px 4px 0 white, 0 17px 50px 0 white;*/
+}
+
+.onback{
+    background-color: #5bc0de; 
+    height: auto; 
+    min-height: 100px; 
+    padding-bottom: 60px; 
+    padding-top: 10px; 
+    padding-right: 10px; 
+    padding-left: 10px; 
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 5px;
+    color: white;
+}
+
+.onmiddle{
+    padding: 10px; 
+    padding-bottom: 50px; 
+    border-bottom-right-radius: 10px; 
+    border-bottom-left-radius: 5px;
+    background:rgba(255, 255, 255, 0.5);
+}
+
+/*styling all modals with bg-info in their head section*/
+.modal-content .bg-info{
+    border-top-left-radius: 6px; 
+    border-top-right-radius: 6px;
+}
+
+.modal-header{
+    border-top-left-radius: 6px; 
+    border-top-right-radius: 6px;
+}
+
+.navItem{
+    color:white;
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 2.0em;
+    float: left;
+}
+
+.navItem:hover{
+    color: #9d9d9d;
+    text-decoration: none;
+}
+
+/* styling d search bar */
+.searchIn{
+    width: 500px;
+}
+
+.createMenu{
+    margin-right: 20px;
+}
+
+/* style on mobile devices */
+@media screen and (max-width: 800px) {
+    .navItem{
+        margin: 0px;
+        clear: both;
+        display: block;
+        height: 50px;
+        padding: 5px;
+        border-bottom: 1px solid black;
+    }
+
+    .navLink{
+        margin: 0px;
+        display: block;
+        clear: both;
+        height: 50px;
+        padding-top: 10px;
+        border-bottom: 1px solid black;
+    }
+
+    .createMenu{
+        margin: 0px;
+        border-bottom: 1px solid black;
+    }
+
+    .searchIn{
+        width: auto;
+    }
+}
+
+/* adding backround to the portal */
+#portalBg{
+    background-image: url('../images/edu.jpeg'); 
+    -moz-background-size:100% 100%; 
+    background-size:100% 100%; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+}
+
+/* adding backround to the user home page */
+#homeBg{
+    background-image: url('../images/new2.png'); 
+    -moz-background-size:100% 100%; 
+    background-size:100% 100%; 
+    background-repeat: repeat; 
+    background-attachment: scroll;
+}
+
+.btn-addon{
+    cursor: default;
+}
+
+/* programmer styles */
+.profilePic{
+    width: 50px;
+    height: 50px;
+}
+
+.transparent{
+  background: rgba(255, 255, 255, 0.0);
+}
+
+.fg-site{
+    color: #5bc0de !important;
+}
+
+.fg-white{
+    color: white !important;
+}
+
+.bg-site {
+    color: white !important;
+    background-color: #5bc0de;
+    border-color: #00ddff;
+}
+
+.nav-tabs > .active > a{
+    color: rgb(1, 127, 127) !important;
+}
+
+.tabLink:hover{
+    color: rgb(1, 127, 127) !important;
+}
+
+.glyphicon{
+    font-size: x-large;
+}
+
+.navbar-nav > .active > a{
+    background-color: #00ccff !important;
+}
+
+.navbar-nav > li > a:hover, .navbar-brand:hover, .navbar-nav > a:hover{
+    background-color: #00ddff !important;
+}
+
+.navbar-nav > li > a{
+    color: white !important;
+    font-size: 1.5em;
+}
+
+.panel-site{
+    border: 2px solid #5bc0de;
+}
+
+.panel-site > .panel-heading{
+    background-color: #5bc0de;
+    color: white;
+}
